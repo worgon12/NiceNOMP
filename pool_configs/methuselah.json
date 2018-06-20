@@ -1,5 +1,5 @@
 {
-    "enabled": true,
+    "enabled": false,
     "coin": "methuselah.json",
     "address": "POOL_ADDRESS",
     "rewardRecipients": {
