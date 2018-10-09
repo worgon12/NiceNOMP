@@ -5,7 +5,7 @@ This is all the things great about NOMP, now with modern style and design of Boo
 
 -------
 ### Node Open Mining Portal consists from 3 main modules:
-* [NOMP](https://github.com/cryptosharks131/node-open-mining-portal)
+* [NOMP](https://github.com/cryptosharks131/NiceNOMP)
 * [Stratum Pool](https://github.com/cryptosharks131/node-stratum-pool)
 * [Node Multihashing](https://github.com/cryptosharks131/node-multi-hashing)
 
@@ -15,12 +15,30 @@ _Add new algorithms using [Node Multihashing](https://github.com/cryptosharks131
 Current version: v1.1.3
 
 -------
+### Recommended Dependencies/Setup Ubuntu 16.04
+```
+sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+sudo apt-get install libboost-all-dev git npm nodejs nodejs-legacy libminiupnpc-dev redis-server
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+sudo apt-get -y install fail2ban
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+
+sudo npm install -g n
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+-------
 ### Install
 ```
-git clone https://github.com/cryptosharks131/node-open-mining-portal.git pool
+git clone https://github.com/cryptosharks131/NiceNOMP.git pool
+sudo chmod a+rwx pool
 cd pool
-npm install
-node init.js
+sudo npm install
+sudo node init.js
 ```
 -------
 ### Requirements
@@ -54,6 +72,7 @@ You can see the logs of the server with ```docker logs -f nomp```, or jump into 
 | ✓ | __SHA256__ | tested with VCOIN, don't use with BTC, no Segwit tested |
 | ✓ | __X11__ | tested with BrainCoin, CannabisCoin, AdzCoin and many others |
 | ✓ | __X16r__ | tested with RavenCoin |
+| ✓ | __X16s__ | tested with AceD |
 | ✓ | __Yescrypt__ | needs tests, though should work |
 | ✓ | __YescryptR16__ | needs tests, though should work |
 | ✓ | __YescryptR32__ | currently being tested with WaviCoin. shares work, payments unconfirmed |
@@ -76,7 +95,7 @@ You can see the logs of the server with ```docker logs -f nomp```, or jump into 
 | ? | __Lbry__ | need tests |
 | ? | __lyra2re__ | need tests |
 | ? | __lyra2re2__ | need tests |
-| ? | __lyra2z330__ | need tests |
+| x | __lyra2z330__ | need tests |
 | ? | __NIST5__ | need tests |
 | ? | __S3__ | need tests |
 | ? | __Scrypt-N__ | need tests |
