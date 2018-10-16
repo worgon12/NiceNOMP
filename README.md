@@ -19,6 +19,7 @@ Current version: v1.1.3
 ```
 sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
 sudo apt-get install libboost-all-dev git npm nodejs nodejs-legacy libminiupnpc-dev redis-server
+sudo apt-get install -y software-properties-common
 sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev
