@@ -129,8 +129,8 @@ var buildPoolData = function(statData, poolName, callback = null) {
 			hashrate: [],
 			averagedHashrate: [],
 			workers: [],
-			averagedWorkers: []
-			//blocks: []
+			averagedWorkers: [],
+			blocks: []
 		};
 		var totalHashrate = 0;
 		var totalWorkers = 0;
