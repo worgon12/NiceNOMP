@@ -130,13 +130,3 @@ sudo node init.js
 ### License
 Released under the GNU General Public License v2
 http://www.gnu.org/licenses/gpl-2.0.html
-
-
-### Donations
-
-
-BTC: `1FJvtLBszQgY2eKBawov48RwSYy2yqEvn1`
-
-ETH: `0x39acE9917e25E2A04643d30319cF34449A72441B`
-
-LTC: `LR1Mmchr6Zz1vj51xecTiEdS1WHfJTVg5t`
