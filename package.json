@@ -39,6 +39,8 @@
         "bignumber.js": "^6.0.0",
         "body-parser": "^1.18.2",
         "chartjs-plugin-zoom": "^0.6.3",
+        "cryptoforknote-util": "git://github.com/DariuszO/node-cryptoforknote-util.git",
+		"cryptonight-hashing": "git://github.com/DariuszO/node-cryptonight-hashing.git",
         "colors": "^1.1.2",
         "compression": "^1.7.1",
         "dateformat": "^2.2.0",
@@ -52,6 +54,9 @@
         "redis": "^2.7.1",
         "request": "^2.83.0",
         "sma": "^0.1.0",
+        "turtlecoin-cryptonote-util": "git://github.com/turtlecoin/node-cryptonote-util",
+        "turtlecoin-multi-hashing": "git://github.com/turtlecoin/node8-multi-hashing",
+		"turtlecoin-crypto": "git://github.com/turtlecoin/turtlecoin-crypto.git",
         "stratum-pool": "git://github.com/worgon12/node-stratum-pool.git",
         "winston": "3.0.0-rc2",
         "winston-daily-rotate-file": "^3.0.0"
